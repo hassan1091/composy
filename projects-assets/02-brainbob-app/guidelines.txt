@@ -1,0 +1,11 @@
+Make sure to meet all the below guidelines:
+
+Please note that screen 2 the color gray is lighter but this is what we've got from the screenshot application. You can see the acutal color when you run the project.
+
+1- Padding values should be (8,16,24,32,40,48 ...)
+
+2- The application should be responsive and adopt multiple screen sizes.
+
+3- You should navigate to screen two when you click "Join us"
+
+4- You should use jetpack navigation. Don't use Intent.

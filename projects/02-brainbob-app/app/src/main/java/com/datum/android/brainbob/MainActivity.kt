@@ -8,31 +8,27 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.datum.android.brainbob.ui.theme.BrainbobTheme
 
 class MainActivity : ComponentActivity() {
+
+    // TODO 2: declare a var
+    lateinit var navController: NavHostController
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             BrainbobTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
+
+                // TODO 3: to remember which screen
+                navController = rememberNavController()
+
+                // TODO 5: Navigation setup
+                SetupNavGraph(navController = navController)
+
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    BrainbobTheme {
-        Greeting("Android")
     }
 }
