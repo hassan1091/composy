@@ -1,0 +1,13 @@
+Colors
+
+Primary Color: #514AB0
+Secondary Color: #FFFFFF
+
+Support colors:
+#000000
+#8F8F8F
+#DFDFDF
+#F56D63
+#493EAA
+#ED8658
+#474747
