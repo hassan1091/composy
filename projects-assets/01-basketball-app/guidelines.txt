@@ -1,5 +1,9 @@
 Make sure to meet all the below guidelines:
 
 1- Padding values should be (8,16,24,32,40,48 ...)
+
 2- Text "The Perfect Basketball Courts for you" font weight should be extra bold and font size is 32 sp.
+
 3- Text "Explore your dream basketball with advanced basketball courts" font weight should be regular and font size is 16 sp.
+
+4- The application should be responsive and adopt multiple screen sizes.
