@@ -9,7 +9,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -56,7 +55,8 @@ fun Logo() {
     ) {
         Image(
             painter = painterResource(id = com.datum.android.brainbob.R.drawable.logo),
-            contentDescription = "logo")
+            contentDescription = "logo"
+        )
     }
 }
 
@@ -70,7 +70,8 @@ fun MainContent() {
     ) {
         Image(
             painter = painterResource(id = com.datum.android.brainbob.R.drawable.person),
-            contentDescription = "logo")
+            contentDescription = "logo"
+        )
     }
 }
 
@@ -82,7 +83,7 @@ fun MainMsg() {
             .padding(8.dp)
             .padding(top = 16.dp)
     ) {
-        Column() {
+        Column(Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
                 text = "Be ready to learn English easily",
                 style = Typography.h1,
